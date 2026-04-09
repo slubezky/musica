@@ -6,7 +6,6 @@
     <title>Sergio Lubezky | Música</title>
     <meta name="description" content="El sonido de lo que no digo. Música de Sergio Lubezky.">
 
-    <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,14 +25,6 @@
             "https://coachdefoto.com/",
             "https://musica.sergiolubezky.com/"
           ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://musica.sergiolubezky.com/#website",
-          "name": "Sergio Lubezky — Música",
-          "url": "https://musica.sergiolubezky.com/",
-          "publisher": { "@id": "https://lubezky.com/#sergio" },
-          "description": "Espacio musical de Sergio Lubezky."
         }
       ]
     }
@@ -73,6 +64,14 @@
             letter-spacing: 2px;
         }
 
+        h2 {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
         p { margin-bottom: 12px; }
 
         .content-box a { 
@@ -80,10 +79,27 @@
             text-decoration: none; 
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s;
         }
 
-        .content-box a:hover { border-bottom: 1px solid #000; }
+        .album {
+            margin-bottom: 60px;
+        }
+
+        .album img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .album-title {
+            font-weight: bold;
+        }
+
+        .album-desc {
+            font-size: 0.95rem;
+            color: #555;
+        }
 
         footer { 
             padding: 60px 20px; 
@@ -100,13 +116,6 @@
             border: 1px solid #eee; 
         }
 
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
-        }
-
         .name { 
             font-weight: 600; 
             font-size: 1rem; 
@@ -119,40 +128,15 @@
             margin: 0 auto 30px auto; 
             font-size: 0.95rem;
             color: #444;
-            line-height: 1.7;
-        }
-
-        .footer-bio p { margin: 0; }
-
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-        }
-
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            color: #000;
         }
 
         .social-nav { 
             list-style: none; 
             padding: 0; 
-            margin: 0; 
             display: flex; 
-            flex-wrap: wrap; 
             justify-content: center; 
             gap: 12px; 
             font-size: 0.85rem; 
-        }
-
-        .social-nav a { color: #666; text-decoration: none; }
-        .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
         }
     </style>
 </head>
@@ -160,57 +144,88 @@
 <body>
 
 <main>
-    <div class="content-box">
-        <h1>Música</h1>
+<div class="content-box">
 
-        <p>El sonido de lo que no digo.</p>
+<h1>Música</h1>
 
-        <p>
-            Hay cosas que no se pueden explicar, solo se pueden sentir.
-        </p>
+<p>El sonido de lo que no digo.</p>
 
-        <p>
-            Por eso hago música: para darle forma y nombre 
-            a lo que a veces no tiene ninguno.
-        </p>
+<p>Hay cosas que no se pueden explicar, solo se pueden sentir.</p>
 
-        <p>
-            Este espacio es mi otra voz, el lugar donde conviven mis dudas, 
-            mis etapas y esas verdades que solo sé contar a través del sonido.
-        </p>
+<p>Por eso hago música: para darle forma y nombre a lo que a veces no tiene ninguno.</p>
 
-        <p>
-            Lo que vas a escuchar aquí no es solo composición, 
-            es mi manera de procesar el mundo.
-        </p>
+<p>Este espacio es mi otra voz.</p>
 
-        <p>
-            Es una invitación a dejar de intentar entenderlo todo 
-            y simplemente permitirte vibrar conmigo.
-        </p>
-    </div>
+<p>Es una invitación a dejar de intentar entenderlo todo y simplemente permitirte vibrar.</p>
+
+<h2>Publicados</h2>
+
+<div class="album">
+    <img src="ascenso.jpg" alt="Ascenso Interior">
+
+    <p class="album-title">Ascenso Interior</p>
+
+    <p class="album-desc">
+        Una exploración introspectiva sobre el proceso de evolución interior.
+    </p>
+
+    <p>
+        <a href="#">Spotify</a> · 
+        <a href="#">Apple</a> · 
+        <a href="#">YouTube</a>
+    </p>
+</div>
+
+<div class="album">
+    <img src="aquiestoy.jpg" alt="Aquí Estoy">
+
+    <p class="album-title">Aquí Estoy</p>
+
+    <p class="album-desc">
+        Un tributo a mis antepasados, a mis padres, hermanos, amigos y amores que han dejado huella en quien soy.
+    </p>
+
+    <p>
+        <a href="#">Spotify</a> · 
+        <a href="#">Apple</a> · 
+        <a href="#">YouTube</a>
+    </p>
+</div>
+
+<h2>En proceso</h2>
+
+<p><strong>A Solas Conmigo</strong><br>
+Un recorrido por los lugares donde he vivido y por quién he sido en cada etapa.</p>
+
+<p><strong>Enfoque Manual</strong><br>
+Una radiografía de quien soy.</p>
+
+<p><strong>Tercera Persona</strong><br>
+Mi mundo, pero visto desde fuera.</p>
+
+<p><strong>Acapulco, El Verano que no fue</strong><br>
+Un ejercicio de narrativa y ficción.</p>
+
+</div>
 </main>
 
 <footer>
-    <img src="foto_sl.png" alt="Sergio Lubezky Música" class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky</span>
-    </a>
 
-    <div class="footer-bio">
-        <p>
-            La música es otra forma de explorar lo que no siempre se puede decir con palabras. 
-            Un espacio donde las ideas se vuelven sonido y las emociones encuentran ritmo.
-        </p>
-    </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://open.spotify.com" target="_blank">Spotify</a></li>
-        <li><a href="https://music.apple.com" target="_blank">Apple Music</a></li>
-        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-        <li><a href="https://lubezky.com" target="_blank">Ecosistema</a></li>
-    </ul>
+<img src="foto_sl.png" class="profile-img">
+
+<div class="name">Sergio Lubezky</div>
+
+<div class="footer-bio">
+<p>
+La música es otra forma de comunicar lo que no siempre se puede decir con palabras.
+</p>
+</div>
+
+<ul class="social-nav">
+<li><a href="https://musica.sergiolubezky.com">Música</a></li>
+<li><a href="https://lubezky.com">Ecosistema</a></li>
+</ul>
+
 </footer>
 
 </body>
