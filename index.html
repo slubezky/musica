@@ -1,3 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Lubezky | Música</title>
+    <meta name="description" content="Un espacio para explorar lo que no siempre se puede decir con palabras. Música de Sergio Lubezky.">
+
+    <style>
+        body { 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+            background-color: #fff; 
+            color: #1a1a1a; 
+            font-family: 'Georgia', serif; 
+            line-height: 1.8; 
+        }
+
+        main { 
+            flex: 1; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 60px 20px; 
+        }
+
+        .content-box { 
+            max-width: 700px; 
+            text-align: center; 
+            font-size: 1.2rem; 
+        }
+
+        h1 { 
+            font-size: 1.5rem;
+            font-weight: bold; 
+            margin-bottom: 16px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p { margin-bottom: 12px; }
+
+        .content-box a { 
+            color: #000; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
+        }
+
+        .content-box a:hover { border-bottom: 1px solid #000; }
+
+        /* --- Footer --- */
+        footer { 
+            padding: 60px 20px; 
+            text-align: center; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+        }
+
+        .profile-img { 
+            width: 75px; 
+            height: 75px; 
+            border-radius: 50%; 
+            margin-bottom: 10px; 
+            object-fit: cover; 
+            border: 1px solid #eee; 
+        }
+
+        .name-link { 
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+            margin-bottom: 2px; 
+        }
+
+        .name { 
+            font-weight: 600; 
+            font-size: 1rem; 
+            letter-spacing: 1.5px; 
+            text-transform: uppercase; 
+        }
+
+        .footer-bio {
+            max-width: 650px;
+            margin: 0 auto 30px auto; 
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+        }
+
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            color: #000;
+        }
+
+        .social-nav { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 12px; 
+            font-size: 0.85rem; 
+        }
+
+        .social-nav a { color: #666; text-decoration: none; }
+        .social-nav a:hover { color: #000; }
+        .social-nav li:not(:last-child)::after { 
+            content: "-"; 
+            margin-left: 12px; 
+            color: #ccc; 
+        }
+    </style>
+</head>
+
+<body>
+
 <main>
     <div class="content-box">
         <h1>Música</h1>
@@ -15,13 +144,8 @@
         </p>
 
         <p>
-            Aquí conviven distintas etapas, distintas preguntas, 
+            Aquí conviven distintas etapas, distintas preguntas 
             y distintas formas de nombrar lo que a veces no tiene nombre.
-        </p>
-
-        <p>
-            Puedes comenzar por lo que ya está publicado, 
-            o asomarte a lo que sigue en proceso.
         </p>
 
         <p>
@@ -30,3 +154,28 @@
         </p>
     </div>
 </main>
+
+<footer>
+    <img src="foto_sl.png" alt="Sergio Lubezky Música" class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky</span>
+    </a>
+
+    <div class="footer-bio">
+        <p>
+            La música es una forma distinta de explorar la misma búsqueda: 
+            entender, sentir y dar forma a lo que ocurre por dentro.
+        </p>
+    </div>
+    
+    <ul class="social-nav">
+        <li><a href="https://open.spotify.com" target="_blank">Spotify</a></li>
+        <li><a href="https://music.apple.com" target="_blank">Apple Music</a></li>
+        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://lubezky.com" target="_blank">Ecosistema</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
