@@ -23,22 +23,70 @@
 </script>
 
 <style>
-body { margin:0; font-family:Georgia,serif; line-height:1.8; color:#1a1a1a; background:#fff; }
+body { margin:0; font-family:Georgia,serif; color:#1a1a1a; background:#fff; }
+
 main { max-width:700px; margin:0 auto; padding:60px 20px; }
-h1 { font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; }
-.subtitle { color:#555; margin-bottom:40px; }
+
+h1 { font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; text-align:center; }
+
+.subtitle { color:#555; margin-bottom:40px; text-align:center; }
+
 img { max-width:320px; display:block; margin:0 auto 40px; }
-h2 { font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; color:#777; margin-top:50px; }
-p { margin-bottom:14px; }
-ul { list-style:none; padding:0; }
+
+h2 { font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; color:#777; margin-top:50px; text-align:center; }
+
+p { margin-bottom:14px; text-align:center; }
+
+ul { list-style:none; padding:0; text-align:center; }
+
 li { margin-bottom:6px; }
+
 a { color:#000; text-decoration:none; border-bottom:1px solid #ddd; }
 
-footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
-.profile-img { width:75px; height:75px; border-radius:50%; border:1px solid #e5e5e5; }
-.name { font-size:0.9rem; letter-spacing:1.5px; text-transform:uppercase; }
-.footer-bio { max-width:600px; margin:20px auto; font-size:0.9rem; color:#555; }
-.social-nav { display:flex; justify-content:center; gap:14px; list-style:none; padding:0; }
+/* FOOTER NUEVO */
+footer {
+    text-align:center;
+    padding:50px 20px 40px;
+}
+
+.profile-img {
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:1px solid #ddd;
+    margin-bottom:12px;
+}
+
+.footer-name {
+    font-size:0.85rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+
+.footer-text {
+    max-width:520px;
+    margin:0 auto 18px auto;
+    font-size:0.95rem;
+    line-height:1.6;
+    color:#555;
+}
+
+.footer-text p {
+    margin:0;
+}
+
+.footer-links {
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    font-size:0.85rem;
+}
+
+.footer-links a {
+    border-bottom:1px solid #ddd;
+}
 </style>
 </head>
 
@@ -49,29 +97,44 @@ footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
 <img src="../ascenso.jpg">
 
 <h1>Ascenso Interior</h1>
-<div class="subtitle">Un viaje acústico hacia el despertar espiritual, la renuncia al ego y la sanación interna.</div>
+
+<div class="subtitle">
+Un viaje acústico hacia el despertar espiritual, la renuncia al ego y la sanación interna.
+</div>
 
 <h2>Contexto</h2>
-<p>Este álbum nace en un momento de profunda transformación y búsqueda de sentido, donde el ruido del mundo exterior dejó de dar respuestas y se hizo urgente mirar hacia adentro. Había una necesidad de soltar las apariencias y entender que las cicatrices tenían un propósito.</p>
+
+<p>Este álbum nace en un momento de profunda transformación y búsqueda de sentido, donde el ruido del mundo exterior dejó de darme respuestas y se hizo urgente mirar hacia adentro. Había una necesidad de soltar las apariencias y entender que las cicatrices tenían un propósito.</p>
 
 <p>Fue una etapa marcada por la vulnerabilidad y el aprendizaje, donde incluso las decepciones se transformaron en lecciones que dieron forma al proceso.</p>
 
 <h2>Idea</h2>
-<p>El álbum gira alrededor de la evolución del alma, el desapego y la ley de causa y efecto, explorando la compasión, la restricción del ego y la aceptación radical.</p>
+
+<p>El álbum gira alrededor de la evolución del alma, el desapego y la ley de causa y efecto, explorando la Kabbaláh, y en especial la compasión, la restricción del ego y la aceptación radical.</p>
 
 <h2>Sonido</h2>
+
 <p>Se mueve entre acoustic folk y balada pop, con guitarras acústicas, pianos suaves y una voz cercana que prioriza la emoción sobre la producción.</p>
 
 <h2>Tracks</h2>
+
 <ul>
 <li>Ascenso Interior</li>
 <li>La Luz en Acción</li>
 <li>Voz y Silencio</li>
 <li>Lo que no dije</li>
+<li>Causa y Efecto (Interlude)/li>
 <li>Todo lo que soy</li>
+<li>Sin Ruido</li>
+<li>Amigo y Lección</li> 
+<li>Donde te Reconoco</li>
+<li>Causa y Efecto</li>  
+
+  
 </ul>
 
 <h2>Escuchar</h2>
+
 <p>
 <a href="https://open.spotify.com/album/4IKAIDrKHVpNQbGSEtwaWe">Spotify</a>
 </p>
@@ -82,19 +145,20 @@ footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
 
 <img src="../foto_sl.png" class="profile-img">
 
-<div class="name">Sergio Lubezky</div>
+<div class="footer-name">Sergio Lubezky</div>
 
-<div class="footer-bio">
+<div class="footer-text">
 <p>La música es otra forma de comunicar lo que no siempre se puede decir con palabras.</p>
 </div>
 
-<ul class="social-nav">
-<li><a href="/">Música</a></li>
-<li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a></li>
-<li><a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a></li>
-<li><a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a></li>
-<li><a href="https://lubezky.com">Ecosistema</a></li>
-</ul>
+<div class="footer-links">
+<a href="/">Música</a>
+<a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon Music</a>
+<a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a>
+<a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a>
+<a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a>
+<a href="https://lubezky.com">Ecosistema</a>
+</div>
 
 </footer>
 
