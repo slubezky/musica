@@ -6,7 +6,6 @@
 <title>Sergio Lubezky | Música</title>
 <meta name="description" content="El sonido de lo que no digo. Música de Sergio Lubezky.">
 
-<!-- SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -79,7 +78,6 @@ a {
     display: inline-block;
 }
 
-/* Hover elegante */
 .album img {
     max-width: 160px;
     display: block;
@@ -88,14 +86,12 @@ a {
     border-radius: 4px;
 }
 
-/* EFECTO */
 .album a:hover img {
     transform: scale(1.04) translateY(-3px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     opacity: 0.95;
 }
 
-/* Título también reacciona */
 .album-title a {
     transition: letter-spacing 0.3s ease, opacity 0.3s ease;
 }
@@ -116,45 +112,52 @@ a {
     color: #666;
 }
 
-/* FOOTER */
+/* FOOTER AJUSTADO */
 
 footer {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px 60px;
     font-family: Arial, sans-serif;
 }
 
 .profile-img {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
 }
 
 .name {
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
+    font-size: 0.95rem;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
+/* TEXTO PRINCIPAL MÁS IMPORTANTE */
 .footer-bio {
-    max-width: 600px;
-    margin: 20px auto;
-    font-size: 0.9rem;
-    color: #555;
+    max-width: 620px;
+    margin: 0 auto 30px auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
 }
 
+/* LINKS MÁS DISCRETOS */
 .social-nav {
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 16px;
     list-style: none;
     padding: 0;
+    font-size: 0.85rem;
+    color: #777;
 }
 
 .social-nav a {
     border-bottom: none;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: opacity 0.3s ease;
 }
 
