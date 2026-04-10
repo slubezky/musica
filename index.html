@@ -12,20 +12,16 @@
   "@type": "MusicArtist",
   "name": "Sergio Lubezky",
   "url": "https://musica.sergiolubezky.com",
-  "image": "https://musica.sergiolubezky.com/foto_sl.png",
-  "sameAs": [
-    "https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ",
-    "https://music.apple.com/mx/artist/sergio-lubezky/1865741434",
-    "https://www.youtube.com/@SergioLubezkyMusic"
-  ]
+  "image": "https://musica.sergiolubezky.com/foto_sl.png"
 }
 </script>
 
 <style>
-body {
-    margin: 0;
-    font-family: Georgia, serif;
-    color: #1a1a1a;
+body { 
+    margin: 0; 
+    font-family: Georgia, serif; 
+    line-height: 1.8; 
+    color: #1a1a1a; 
     background: #fff;
 }
 
@@ -36,30 +32,19 @@ main {
 }
 
 .content-box {
-    font-size: 1.2rem;
-    line-height: 1.8;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #777;
-    margin-top: 60px;
-    text-align: center;
-}
-
-p {
-    margin-bottom: 12px;
-}
+p { margin-bottom: 12px; }
 
 a {
     color: #000;
@@ -67,44 +52,18 @@ a {
     border-bottom: 1px solid #ddd;
 }
 
-/* ALBUMS */
-
 .album {
-    margin-bottom: 60px;
+    margin: 50px 0;
     text-align: center;
 }
 
-.album a {
-    display: inline-block;
-}
-
 .album img {
-    max-width: 160px;
-    display: block;
-    margin: 0 auto 12px auto;
-    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.3s ease;
-    border-radius: 4px;
-}
-
-.album a:hover img {
-    transform: scale(1.04) translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    opacity: 0.95;
-}
-
-.album-title a {
-    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
-}
-
-.album a:hover + .album-title a,
-.album-title a:hover {
-    letter-spacing: 1px;
-    opacity: 0.8;
+    max-width: 150px;
+    margin-bottom: 10px;
 }
 
 .album-title {
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
 .platforms {
@@ -112,58 +71,56 @@ a {
     color: #666;
 }
 
-/* FOOTER */
+/* ===== FOOTER AJUSTADO ===== */
 
 footer {
+    padding: 60px 20px;
     text-align: center;
-    padding: 80px 20px 60px;
     font-family: Arial, sans-serif;
 }
 
-/* ARO SUTIL */
 .profile-img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    border: 2px solid #444; /* gris oscuro */
-    padding: 3px; /* crea aire entre imagen y borde */
-    background: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    border: 0.5px solid #eaeaea; /* más sutil */
 }
 
 .name {
-    font-size: 0.95rem;
-    letter-spacing: 1.8px;
+    font-weight: 600; /* igual que lubezky */
+    font-size: 1rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .footer-bio {
-    max-width: 620px;
+    max-width: 650px;
     margin: 0 auto 30px auto;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    color: #444;
     line-height: 1.7;
-    color: #333;
 }
 
-.social-nav {
+.footer-bio p {
+    margin: 0;
+}
+
+.footer-links {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    list-style: none;
-    padding: 0;
+    gap: 12px;
     font-size: 0.85rem;
-    color: #777;
 }
 
-.social-nav a {
-    border-bottom: none;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+.footer-links a {
+    color: #666;
+    text-decoration: none;
 }
 
-.social-nav a:hover {
-    opacity: 1;
+.footer-links a:hover {
+    color: #000;
 }
 </style>
 </head>
@@ -172,9 +129,9 @@ footer {
 
 <main>
 
-<h1>Música</h1>
-
 <div class="content-box">
+
+<h1>Música</h1>
 
 <p>El sonido de lo que no digo.</p>
 
@@ -188,56 +145,16 @@ Este lugar es otra forma de decir lo mismo que atraviesa todo lo demás, pero de
 
 </div>
 
-<h2>Publicados</h2>
-
 <div class="album">
-<a href="/ascenso-interior/">
 <img src="ascenso.jpg">
-</a>
-<p class="album-title"><a href="/ascenso-interior/">Ascenso Interior</a></p>
-<p class="platforms">
-<a href="https://music.amazon.com.mx/albums/B0GVZW35NB">Amazon</a> · 
-<a href="https://music.apple.com/mx/album/todo-lo-que-soy-lecciones-de-kabbalah/1890531152">Apple</a> · 
-<a href="https://www.claromusica.com/embed/album/84549229/">Claro</a> · 
-<a href="https://open.spotify.com/album/4IKAIDrKHVpNQbGSEtwaWe">Spotify</a> · 
-<a href="https://music.youtube.com/playlist?list=OLAK5uy_kon6dnPqhRiRYhHNJlIbmw64iTB5hjrI4">YouTube</a>
-</p>
+<p class="album-title">Ascenso Interior</p>
+<p class="platforms">Amazon · Apple · Claro · Spotify · YouTube</p>
 </div>
 
 <div class="album">
-<a href="/aqui-estoy/">
 <img src="aquiestoy.jpg">
-</a>
-<p class="album-title"><a href="/aqui-estoy/">Aquí Estoy</a></p>
-<p class="platforms">
-<a href="https://music.amazon.com.mx/albums/B0GVWSFLKC">Amazon</a> · 
-<a href="https://music.apple.com/mx/album/aqu%C3%AD-estoy/1890348371">Apple</a> · 
-<a href="https://www.claromusica.com/embed/album/84498363/">Claro</a> · 
-<a href="https://open.spotify.com/album/3of0qtchk0cUGyUMEpfE1K">Spotify</a> · 
-<a href="https://music.youtube.com/playlist?list=OLAK5uy_mnOUOli0HAdMDFbd7OZFPe8V_mJvkdXmQ">YouTube</a>
-</p>
-</div>
-
-<h2>En proceso</h2>
-
-<div class="album">
-<a href="/a-solas-conmigo/"><img src="asolas.jpg"></a>
-<p class="album-title"><a href="/a-solas-conmigo/">A Solas Conmigo</a></p>
-</div>
-
-<div class="album">
-<a href="/enfoque-manual/"><img src="enfoque.jpg"></a>
-<p class="album-title"><a href="/enfoque-manual/">Enfoque Manual</a></p>
-</div>
-
-<div class="album">
-<a href="/tercera-persona/"><img src="tercera.jpg"></a>
-<p class="album-title"><a href="/tercera-persona/">Tercera Persona</a></p>
-</div>
-
-<div class="album">
-<a href="/acapulco/"><img src="acapulco.jpg"></a>
-<p class="album-title"><a href="/acapulco/">Acapulco</a></p>
+<p class="album-title">Aquí Estoy</p>
+<p class="platforms">Amazon · Apple · Claro · Spotify · YouTube</p>
 </div>
 
 </main>
@@ -249,16 +166,18 @@ Este lugar es otra forma de decir lo mismo que atraviesa todo lo demás, pero de
 <div class="name">Sergio Lubezky</div>
 
 <div class="footer-bio">
-<p>La música es otra forma de comunicar lo que no siempre se puede decir con palabras.</p>
+<p>
+La música es otra forma de comunicar lo que no siempre se puede decir con palabras.
+</p>
 </div>
 
-<ul class="social-nav">
-<li><a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon Music</a></li>
-<li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a></li>
-<li><a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a></li>
-<li><a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a></li>
-<li><a href="https://lubezky.com">Ecosistema Sergio Lubezky</a></li>
-</ul>
+<div class="footer-links">
+<a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a>
+<a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a>
+<a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon</a>
+<a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube</a>
+<a href="https://lubezky.com">Ecosistema</a>
+</div>
 
 </footer>
 
