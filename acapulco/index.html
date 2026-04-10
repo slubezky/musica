@@ -23,22 +23,116 @@
 </script>
 
 <style>
-body { margin:0; font-family:Georgia,serif; line-height:1.8; color:#1a1a1a; background:#fff; }
-main { max-width:700px; margin:0 auto; padding:60px 20px; }
-h1 { font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; }
-.subtitle { color:#555; margin-bottom:40px; }
-img { max-width:320px; display:block; margin:0 auto 40px; }
-h2 { font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; color:#777; margin-top:50px; }
-p { margin-bottom:14px; }
-ul { list-style:none; padding:0; }
-li { margin-bottom:6px; }
-a { color:#000; text-decoration:none; border-bottom:1px solid #ddd; }
+body { 
+    margin:0; 
+    font-family:Georgia,serif; 
+    line-height:1.8; 
+    color:#1a1a1a; 
+    background:#fff; 
+}
 
-footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
-.profile-img { width:75px; height:75px; border-radius:50%; border:1px solid #e5e5e5; }
-.name { font-size:0.9rem; letter-spacing:1.5px; text-transform:uppercase; }
-.footer-bio { max-width:600px; margin:20px auto; font-size:0.9rem; color:#555; }
-.social-nav { display:flex; justify-content:center; gap:14px; list-style:none; padding:0; }
+main { 
+    max-width:700px; 
+    margin:0 auto; 
+    padding:60px 20px; 
+    text-align:center; /* ✅ centrado */
+}
+
+h1 { 
+    font-size:1.4rem; 
+    letter-spacing:2px; 
+    text-transform:uppercase; 
+}
+
+.subtitle { 
+    color:#555; 
+    margin-bottom:40px; 
+}
+
+img { 
+    max-width:320px; 
+    display:block; 
+    margin:0 auto 40px; 
+}
+
+h2 { 
+    font-size:0.85rem; 
+    letter-spacing:2px; 
+    text-transform:uppercase; 
+    color:#777; 
+    margin-top:50px; 
+}
+
+p { 
+    margin-bottom:14px; 
+}
+
+ul { 
+    list-style:none; 
+    padding:0; 
+}
+
+li { 
+    margin-bottom:6px; 
+}
+
+a { 
+    color:#000; 
+    text-decoration:none; 
+    border-bottom:1px solid #ddd; 
+}
+
+/* FOOTER (idéntico a música) */
+footer {
+    text-align: center;
+    padding: 80px 20px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #444;
+    padding: 3px;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.name {
+    font-size: 0.95rem;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-bio {
+    max-width: 620px;
+    margin: 0 auto 30px auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.social-nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.social-nav a {
+    border-bottom: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-nav a:hover {
+    opacity: 1;
+}
 </style>
 </head>
 
@@ -49,9 +143,13 @@ footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
 <img src="../acapulco.jpg">
 
 <h1>Acapulco</h1>
-<div class="subtitle">El verano que no fue.</div>
+
+<div class="subtitle">
+El verano que no fue.
+</div>
 
 <h2>Contexto</h2>
+
 <p>Este álbum nace como un giro creativo: dejar de narrar desde la experiencia propia para construir una historia desde afuera. Aquí aparece el lenguaje del cine, de los personajes y de la narrativa que se desarrolla escena por escena.</p>
 
 <p>La historia sigue a dos amigos que, sin buscarlo, cruzan una línea emocional durante un viaje que termina transformando su relación. Lo que comienza como rutina se convierte en un espacio donde aparece el deseo, el miedo y la necesidad de ocultar lo que sienten.</p>
@@ -59,23 +157,33 @@ footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
 <p>Es una exploración del amor en secreto, de la libertad que existe en ciertos espacios y del peso de tener que volver a una realidad donde no todo puede decirse.</p>
 
 <h2>Idea</h2>
+
 <p>El álbum gira alrededor del despertar emocional y la tensión de lo prohibido, explorando la transición entre la amistad y el deseo, y la marca permanente de un momento breve pero intenso.</p>
 
 <h2>Sonido</h2>
+
 <p>Es el proyecto más cinematográfico e inmersivo, combinando pop urbano, tropical house y atmósferas electrónicas profundas, con una producción diseñada para acompañar una narrativa emocional completa.</p>
 
 <h2>Tracks</h2>
+
 <ul>
 <li>Kilómetro Cero</li>
+  <li>Cajita de Sorpresas</li>
 <li>Sal y Oro</li>
 <li>A un Centímetro</li>
+  <li>Plan de Viernes</li>
+  <li>Sin Buscar nada</li>
 <li>Refugio de Neón</li>
+  <li>A Profundidad</li>
 <li>Metamorfosis</li>
+  <li>La Última Noche</li>
 <li>A Mil Kilómetros</li>
+  <li>El Verano Que Si Fue - Bonus</li></li>
 </ul>
 
-<h2>Disponible próximamente</h2>
-<p>Próximamente disponible en todas las plataformas digitales.</p>
+<h2>POSTPRODUCCIÓN</h2>
+
+<p>Disponible en Verano del 2026 en todas las plataformas digitales.</p>
 
 </main>
 
@@ -90,11 +198,11 @@ footer { text-align:center; padding:60px 20px; font-family:Arial,sans-serif; }
 </div>
 
 <ul class="social-nav">
-<li><a href="/">Música</a></li>
+<li><a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon Music</a></li>
 <li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a></li>
 <li><a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a></li>
 <li><a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a></li>
-<li><a href="https://lubezky.com">Ecosistema</a></li>
+<li><a href="https://lubezky.com">Ecosistema Sergio Lubezky</a></li>
 </ul>
 
 </footer>
