@@ -5,172 +5,133 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Música | Sergio Lubezky</title>
-<meta name="description" content="El sonido de lo que no digo. Música de Sergio Lubezky.">
-
-<link rel="canonical" href="https://musica.sergiolubezky.com/">
-
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="Sergio Lubezky | Música">
-<meta property="og:description" content="El sonido de lo que no digo.">
-<meta property="og:url" content="https://musica.sergiolubezky.com/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://musica.sergiolubezky.com/foto_sl.png">
-
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://lubezky.com/#sergio",
-  "name": "Sergio Lubezky",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://musica.sergiolubezky.com/"
-  },
-  "url": "https://musica.sergiolubezky.com",
-  "image": "https://musica.sergiolubezky.com/foto_sl.png",
-  "sameAs": [
-    "https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ",
-    "https://music.apple.com/mx/artist/sergio-lubezky/1865741434",
-    "https://www.youtube.com/@SergioLubezkyMusic"
-  ]
-}
-</script>
+<meta name="description" content="Exploraciones musicales como una forma de entender, procesar y comunicar experiencias.">
 
 <style>
-body {
-    margin: 0;
-    font-family: Georgia, serif;
-    color: #1a1a1a;
-    background: #fff;
+* { box-sizing: border-box; }
+
+body { 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #fff; 
+    color: #1a1a1a; 
+    font-family: 'Georgia', serif; 
 }
 
-main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 60px 20px 30px;
+main { 
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    padding: 60px 20px; 
 }
 
-.content-box {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    text-align: center;
+.content-box { 
+    max-width: 800px; 
+    text-align: center; 
 }
 
 h1 {
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
 }
 
-h2 {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #777;
-    margin-top: 60px;
-    text-align: center;
-}
-
-p {
-    margin-bottom: 12px;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
+.section {
+    margin: 40px 0;
 }
 
 .album {
-    margin-bottom: 45px;
-    text-align: center;
-}
-
-.album a {
-    display: inline-block;
+    margin-bottom: 35px;
 }
 
 .album img {
-    max-width: 160px;
-    display: block;
-    margin: 0 auto 12px auto;
-    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.3s ease;
-    border-radius: 4px;
-}
-
-.album a:hover img {
-    transform: scale(1.04) translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    opacity: 0.95;
-}
-
-.album-title a {
-    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
-}
-
-.album a:hover + .album-title a,
-.album-title a:hover {
-    letter-spacing: 1px;
-    opacity: 0.8;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
 }
 
 .album-title {
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 60px 20px 60px;
-    font-family: Arial, sans-serif;
+.release-date {
+    font-size: 0.9rem;
+    color: #666;
 }
 
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #444;
-    padding: 3px;
-    background: #fff;
-    margin-bottom: 12px;
+.content-box a { 
+    color: #000; 
+    text-decoration: underline;
 }
 
-.name {
-    font-size: 0.95rem;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+/* FOOTER (idéntico) */
+footer { 
+    padding: 60px 20px; 
+    text-align: center; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+}
+
+.profile-img { 
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+    object-fit: cover; 
+    border: 1px solid #eee; 
+}
+
+.name-link { 
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    margin-bottom: 2px; 
+}
+
+.name { 
+    font-weight: 600; 
+    font-size: 1rem; 
+    letter-spacing: 1.5px; 
+    text-transform: uppercase; 
 }
 
 .footer-bio {
-    max-width: 620px;
-    margin: 0 auto 30px auto;
-    font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto 30px auto; 
+    font-size: 0.95rem;
+    color: #444;
     line-height: 1.7;
-    color: #333;
 }
 
-.social-nav {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    list-style: none;
-    padding: 0;
-    font-size: 0.85rem;
-    color: #777;
+.footer-bio a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
 }
 
-.social-nav a {
-    border-bottom: none;
-    opacity: 0.7;
+.footer-bio a:hover {
+    border-bottom: 1px solid #1a1a1a;
 }
 
-.social-nav a:hover {
-    opacity: 1;
+.social-nav { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 12px; 
+    font-size: 0.85rem; 
+}
+
+.social-nav a { 
+    color: #666; 
+    text-decoration: none; 
+}
+
+.social-nav a:hover { 
+    color: #000; 
 }
 </style>
 </head>
@@ -178,94 +139,94 @@ footer {
 <body>
 
 <main>
+<div class="content-box">
 
 <h1>Música</h1>
 
-<div class="content-box">
-<p>El sonido de lo que no digo.</p>
-<p>
-Hay cosas que no se pueden explicar, solo se pueden sentir. La música nace precisamente de ese espacio: de la necesidad de darle forma a lo que a veces no tiene nombre.
-</p>
-<p>
-Este lugar es otra forma de decir lo mismo que atraviesa todo lo demás, pero desde otro lenguaje.
-</p>
+<div class="section">
+    <h2>Publicado</h2>
+
+    <div class="album">
+        <img src="/asolas.jpg" alt="A solas conmigo" loading="lazy">
+        <div class="album-title">A solas conmigo</div>
+    </div>
 </div>
 
-<h2>Publicados</h2>
+<div class="section">
+    <h2>Próximamente</h2>
 
-<div class="album">
-<a href="https://musica.sergiolubezky.com/ascenso-interior/">
-<img src="ascenso.jpg">
-</a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/ascenso-interior/">Ascenso Interior</a></p>
+    <!-- A VECES -->
+    <div class="album">
+        <a href="/veces/">
+            <img src="/veces.jpg" alt="A veces… Amor" loading="lazy">
+            <div class="album-title">A veces… Amor</div>
+        </a>
+        <div class="release-date">Disponible en todas las plataformas — 5 de junio de 2026</div>
+    </div>
+
+    <div class="album">
+        <div class="album-title">Enfoque Manual</div>
+        <div class="release-date">Disponible en todas las plataformas — 3 de julio de 2026</div>
+    </div>
+
+    <div class="album">
+        <div class="album-title">Acapulco, El verano que no fue</div>
+        <div class="release-date">Disponible en todas las plataformas — 14 de agosto de 2026</div>
+    </div>
+
+    <div class="album">
+        <div class="album-title">Tercera Persona</div>
+        <div class="release-date">Disponible en todas las plataformas — 11 de septiembre de 2026</div>
+    </div>
+
+    <div class="album">
+        <div class="album-title">Mi Calle</div>
+        <div class="release-date">Disponible en todas las plataformas — 30 de septiembre de 2026</div>
+    </div>
+
+    <div class="album">
+        <div class="album-title">Todos Somos Medallo</div>
+        <div class="release-date">Disponible en todas las plataformas — 6 de noviembre de 2026</div>
+    </div>
+
+    <div class="album">
+        <div class="album-title">Luz Prestada</div>
+        <div class="release-date">Disponible en todas las plataformas — 18 de diciembre de 2026</div>
+    </div>
+
 </div>
 
-<div class="album">
-<a href="https://musica.sergiolubezky.com/aqui-estoy/">
-<img src="aquiestoy.jpg">
-</a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/aqui-estoy/">Aquí Estoy</a></p>
 </div>
-
-<h2>En proceso</h2>
-
-<div class="album">
-<a href="https://musica.sergiolubezky.com/a-solas-conmigo/"><img src="asolas.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/a-solas-conmigo/">A Solas Conmigo</a></p>
-</div>
-
-<div class="album">
-<a href="https://musica.sergiolubezky.com/enfoque-manual/"><img src="enfoque.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/enfoque-manual/">Enfoque Manual</a></p>
-</div>
-
-<div class="album">
-<a href="https://musica.sergiolubezky.com/tercera-persona/"><img src="tercera.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/tercera-persona/">Tercera Persona</a></p>
-</div>
-
-<div class="album">
-<a href="https://musica.sergiolubezky.com/acapulco/"><img src="acapulco.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/acapulco/">Acapulco</a></p>
-</div>
-
-<!-- NUEVO: Mi Calle -->
-<div class="album">
-<a href="https://musica.sergiolubezky.com/calle/"><img src="calle.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/calle/">Mi Calle</a></p>
-</div>
-
-<div class="album">
-<a href="https://musica.sergiolubezky.com/medallo/"><img src="medallo.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/medallo/">Medallo</a></p>
-</div>
-
-<!-- NUEVO: Luz Prestada -->
-<div class="album">
-<a href="https://musica.sergiolubezky.com/luz/"><img src="luz.jpg"></a>
-<p class="album-title"><a href="https://musica.sergiolubezky.com/luz/">Luz Prestada</a></p>
-</div>
-
 </main>
 
 <footer>
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
 
-<img src="foto_sl.png" class="profile-img">
-
-<div class="name">Sergio Lubezky</div>
-
-<div class="footer-bio">
-<p>La música es otra forma de comunicar lo que no siempre se puede decir con palabras.</p>
+    <div class="footer-bio">
+    <p>
+        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+    </p>
 </div>
-
-<ul class="social-nav">
-<li><a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon Music</a></li>
-<li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a></li>
-<li><a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a></li>
-<li><a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a></li>
-<li><a href="https://lubezky.com">Ecosistema Sergio Lubezky</a></li>
-</ul>
-
+    
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+    </ul>
 </footer>
 
 </body>
